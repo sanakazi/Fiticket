@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:checked="false"
+            android:icon="@drawable/ic_home_black_36dp"
+            android:title="@string/home_string" />
+
+        <item
+            android:id="@+id/upcoming"
+            android:checked="false"
+            android:icon="@drawable/ic_event_note_black_36dp"
+            android:title="@string/upcoming_string" />
+
+        <item
+            android:id="@+id/history"
+            android:checked="false"
+            android:icon="@drawable/ic_history_black_36dp"
+            android:title="@string/history_string" />
+
+        <item
+            android:id="@+id/favorites"
+            android:checked="false"
+            android:icon="@drawable/ic_star_border_black_36dp"
+            android:title="@string/favorites_string" />
+        <item
+            android:id="@+id/referral"
+            android:checked="false"
+            android:icon="@drawable/ic_share_black_36dp"
+            android:title="@string/refer_string" />
+        <item
+            android:id="@+id/buySubscription"
+            android:checked="false"
+            android:icon="@drawable/ic_shopping_cart_black_36dp"
+            android:title="@string/buySubs_string" />
+
+        <item
+            android:id="@+id/activeSubscription"
+            android:checked="false"
+            android:icon="@drawable/ic_shopping_cart_black_36dp"
+            android:title="@string/activeSubs_string" />
+        <item
+            android:id="@+id/rateUs"
+            android:checked="false"
+            android:icon="@drawable/ic_rate_review_black_36dp"
+            android:title="@string/rateusString" />
+
+        <item
+            android:id="@+id/help"
+            android:checked="false"
+            android:icon="@drawable/ic_help_black_36dp"
+            android:title="@string/help_string" />
+
+    </group>
+</menu>

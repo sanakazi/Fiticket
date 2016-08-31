@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+ <item android:state_pressed="true" android:drawable="@drawable/explore_button"/>
+<item android:state_focused="true" android:drawable="@drawable/explore_button_yellow"/>
+ <item android:drawable="@drawable/explore_button_yellow"/>
+</selector>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/footerview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/header"
+    android:orientation="horizontal"
+    android:weightSum="4">
+
+    <Button
+        android:id="@+id/buttonFeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/Transparent"
+        android:drawableTop="@drawable/ic_feeds"
+        android:padding="5dp"
+        android:text="Feeds"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/buttonActivities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/Transparent"
+        android:drawableTop="@drawable/ticket"
+        android:padding="5dp"
+        android:text="Activities"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/buttonIFeelLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/Transparent"
+        android:drawableTop="@drawable/ic_feel_like"
+        android:padding="5dp"
+        android:text="@string/iFeelLike"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/buttonNearby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/Transparent"
+        android:drawableTop="@drawable/dumbbell"
+        android:padding="5dp"
+        android:text="@string/placesnearby"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp" />
+
+
+</LinearLayout>

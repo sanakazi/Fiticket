@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app1="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Platinum"
+        android:orientation="vertical"
+        tools:context="com.fitticket.viewmodel.fragments.ActivitiesFragmentNew">
+
+        <TextView
+            android:id="@+id/timePickerTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="5dp"
+            android:text="CHOOSE YOUR START TIME"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Gray"
+            android:visibility="gone" />
+
+        <com.fitticket.viewmodel.custom.RangeSeekBar
+            android:id="@+id/sliderNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timePickerTextview"
+            android:visibility="gone"
+            app1:absoluteMaxValue="23"
+            app1:absoluteMinValue="06" />
+
+        <include layout="@layout/days_layout" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/activities_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/noActLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/Platinum"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/noAtt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_empty_attended" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/noAtt"
+                    android:layout_centerHorizontal="true"
+                    android:text="No Activities Today"
+                    android:textColor="@color/Gray"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/map_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_map_black_36dp"
+        app1:backgroundTint="@color/colorAccent" />
+
+</FrameLayout>

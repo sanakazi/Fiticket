@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/search"
+        android:title="@string/search_title"
+        android:icon="@drawable/ic_search_white_24dp"
+        app:showAsAction="collapseActionView|ifRoom"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+    <!--<item-->
+        <!--android:id="@+id/action_Filter"-->
+        <!--android:icon="@drawable/emptyfilter"-->
+        <!--app:showAsAction="always"-->
+        <!--android:title="Filter"/>-->
+    <item
+        android:id="@+id/action_Timer"
+        android:icon="@drawable/ic_time"
+        app:showAsAction="always"
+        android:title="Timer"/>
+</menu>

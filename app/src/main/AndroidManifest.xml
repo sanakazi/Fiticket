@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fitticket">
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.SEND" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.c2dm.intent.REGISTER" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- Permissions for GCM -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.fitticket.gcm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.fitticket.gcm.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".viewmodel.application.FiticketApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.fitticket.gcm" />
+
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+            </intent-filter>
+        </receiver>
+
+        <!-- <service -->
+        <!-- android:name=".model.services.MyGcmListenerService" -->
+        <!-- android:exported="false"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.android.c2dm.intent.RECEIVE" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+
+
+        <!-- QGraph -->
+        <service
+            android:name="com.quantumgraph.sdk.QGInstanceIdListener"
+            android:exported="false">
+            <intent-filter>
+
+                <!-- Receives the Refresh token message. -->
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.quantumgraph.sdk.QGGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.quantumgraph.sdk.NotificationIntentProcessor"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="com.quantumgraph.sdk.GcmNotificationIntentService"
+            android:exported="true" />
+
+        <activity
+            android:name=".viewmodel.activities.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".viewmodel.activities.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewmodel.activities.SignupActivity"
+            android:label="@string/title_activity_signUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewmodel.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".viewmodel.activities.TrainningSlidesActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewmodel.activities.Feedback_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewmodel.activities.BookingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewmodel.activities.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewmodel.activities.EditUserActivity"
+            android:label="@string/title_activity_edit_user"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewmodel.activities.ForgotPasswordWebview"
+            android:label="@string/title_activity_forgotpassword"
+            android:parentActivityName=".viewmodel.activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fitticket.viewmodel.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".viewmodel.activities.ImageDisplayActivity"
+            android:label="@string/title_activity_imageDisplayActivity"
+            android:parentActivityName=".viewmodel.activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fitticket.viewmodel.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".viewmodel.activities.CCAvenueWebview"
+            android:label="@string/title_activity_buy_subscription"
+            android:parentActivityName=".viewmodel.activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fitticket.viewmodel.activities.MainActivity" />
+        </activity>
+
+        <service
+            android:name=".model.services.FetchAddressIntentService"
+            android:exported="false" />
+        <service
+            android:name=".model.services.FetchAllActivitiesService"
+            android:exported="false" />
+        <service
+            android:name=".model.services.FetchAllGymsService"
+            android:exported="false" />
+        <service
+            android:name=".model.services.FetchCategoriesService"
+            android:exported="false" />
+        <service
+            android:name=".model.services.FetchFavGymsService"
+            android:exported="false" />
+        <service
+            android:name=".model.services.FetchOperatingCityService"
+            android:exported="false" />
+        <service
+            android:name=".model.services.FetchProfileDetailsService"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB-JXRPGHJf7yptSjk2XuCYSLatvkhcNS0" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".viewmodel.activities.ActivityDetailsActivity"
+            android:label="@string/title_activity_activity_details"
+            android:parentActivityName=".viewmodel.activities.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.fiticket.com"
+                    android:pathPrefix="/ActivityDetailsActivity"
+                    android:scheme="http" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fitticket.viewmodel.activities.MainActivity" />
+        </activity>
+
+        <service
+            android:name=".model.services.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".model.services.RegistrationIntentService"
+            android:exported="false" />
+
+        <activity
+            android:name=".viewmodel.activities.GymDetailsActivity"
+            android:label="@string/title_activity_gym_details"
+            android:parentActivityName=".viewmodel.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fitticket.viewmodel.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".viewmodel.activities.MapActivity"
+            android:parentActivityName=".viewmodel.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fitticket.viewmodel.activities.MainActivity" />
+        </activity>
+        <activity android:name=".viewmodel.activities.PayTmWebViewActivity" />
+        <activity
+            android:name=".viewmodel.activities.BuySubscriptionActivity"
+            android:label="@string/title_activity_buy_subcription"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+    </application>
+
+</manifest>

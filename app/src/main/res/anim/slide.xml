@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android= "http://schemas. android.com/apk/res/android" android:ordering="sequentially">
+   <!-- fade in -->
+   <objectAnimator
+     android:propertyName="alpha"
+     android:duration="1000"
+     android:valueFrom="0.0"
+     android:valueTo="1.0"
+     android:valueType="floatType"
+     />  
+
+   <!-- slide in-->
+<objectAnimator
+   android:propertyName="y"
+     android:duration="1000"
+     android:interpolator=" @android:anim/accelerate_interpolator"
+     android:valueFrom="-300"
+     android:valueTo="150"
+     android:valueType="intType"
+     />
+
+
+  
+</set>

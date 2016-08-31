@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.fitticket.EditUserActivity" >
+
+    <EditText
+        android:id="@+id/usernameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="USER NAME"
+        android:padding="20dp"
+        android:textSize="17sp" 
+        android:editable="false"/>
+
+    <EditText
+        android:id="@+id/mobileNoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameTextView"
+        android:hint="MOBILE NUMBER"
+        android:numeric="integer"
+        android:padding="20dp"
+        
+        android:maxLength="10"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/oldpasswordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mobileNoText"
+        android:singleLine="true"
+        android:hint="OLD PASSWORD"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/newPasswordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/oldpasswordText"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:hint="NEW PASSWORD"
+        android:padding="20dp"
+        android:textSize="15sp" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <ImageButton
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/save" />
+    </LinearLayout>
+
+</RelativeLayout>

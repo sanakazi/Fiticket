@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main$Generated" generated="true"><source path="D:\Images and Icon\Fiticket\SourceCode\Fiticket\AndroidApp\wibmoSDK\src\main\res"/><source path="D:\Images and Icon\Fiticket\SourceCode\Fiticket\AndroidApp\wibmoSDK\build\generated\res\rs\debug"/><source path="D:\Images and Icon\Fiticket\SourceCode\Fiticket\AndroidApp\wibmoSDK\build\generated\res\resValues\debug"/></dataSet><dataSet config="debug$Generated" generated="true"><source path="D:\Images and Icon\Fiticket\SourceCode\Fiticket\AndroidApp\wibmoSDK\src\debug\res"/></dataSet><dataSet config="main" generated-set="main$Generated"><source path="D:\Images and Icon\Fiticket\SourceCode\Fiticket\AndroidApp\wibmoSDK\src\main\res"><file name="home_logo" path="D:\Images and Icon\Fiticket\SourceCode\Fiticket\AndroidApp\wibmoSDK\src\main\res\drawable\home_logo.png" qualifiers="" type="drawable"/><file name="paper_bottom" path="D:\Images and Icon\Fiticket\SourceCode\Fiticket\AndroidApp\wibmoSDK\src\main\res\drawable\paper_bottom.png" qualifiers="" type="drawable"/><file name="paper_top" path="D:\Images and Icon\Fiticket\SourceCode\Fiticket\AndroidApp\wibmoSDK\src\main\res\drawable\paper_top.png" qualifiers="" type="drawable"/><file name="pay_with_wibmo_44dp" path="D:\Images and Icon\Fiticket\SourceCode\Fiticket\AndroidApp\wibmoSDK\src\main\res\drawable\pay_with_wibmo_44dp.9.png" qualifiers="" type="drawable"/><file name="wibmo_logo_only" path="D:\Images and Icon\Fiticket\SourceCode\Fiticket\AndroidApp\wibmoSDK\src\main\res\drawable\wibmo_logo_only.png" qualifiers="" type="drawable"/><file name="activity_inapp_browser" path="D:\Images and Icon\Fiticket\SourceCode\Fiticket\AndroidApp\wibmoSDK\src\main\res\layout\activity_inapp_browser.xml" qualifiers="" type="layout"/><file name="activity_inapp_init" path="D:\Images and Icon\Fiticket\SourceCode\Fiticket\AndroidApp\wibmoSDK\src\main\res\layout\activity_inapp_init.xml" qualifiers="" type="layout"/><file name="trust_wsdk_bks_star_ens_uat" path="D:\Images and Icon\Fiticket\SourceCode\Fiticket\AndroidApp\wibmoSDK\src\main\res\raw\trust_wsdk_bks_star_ens_uat" qualifiers="" type="raw"/><file path="D:\Images and Icon\Fiticket\SourceCode\Fiticket\AndroidApp\wibmoSDK\src\main\res\values\colors.xml" qualifiers=""><color name="default_text_color_dark">#6c6c6c</color><color name="default_text_color_light">#f0f0ee</color><color name="to_confirm_paper_color">#f4f4f4</color><color name="logo_color_green">#99cc33</color><integer-array name="spb_colors">
+        <item>@color/logo_color_blue</item>
+        <item>@color/logo_color_orange</item>
+        <item>@color/logo_color_green</item>
+    </integer-array><color name="logo_color_orange">#ff9933</color><color name="logo_color_blue">#3399ff</color></file><file path="D:\Images and Icon\Fiticket\SourceCode\Fiticket\AndroidApp\wibmoSDK\src\main\res\values\dimens.xml" qualifiers=""><dimen name="activity_vertical_margin">16dp</dimen><dimen name="activity_inapp_browser_width">300dp</dimen><dimen name="activity_horizontal_margin">16dp</dimen></file><file path="D:\Images and Icon\Fiticket\SourceCode\Fiticket\AndroidApp\wibmoSDK\src\main\res\values\strings.xml" qualifiers=""><string name="wibmosdk_phone_state_permission_rationale">We need access to basic info about your phone to secure your transaction.</string><string name="wibmosdk_phone_state_permission_missing_msg">You need to allow access to basic info about your phone to secure this transaction.</string><string name="label_pl_wait_reloading">Please wait.. Reloading current page..</string><string name="title_sdk_inapp">Wibmo IAP</string><string name="error_generic_try_after_st">Sorry, we had an error. Please try after some time.</string><string name="label_yes">Yes</string><string name="label_try_again">Try Again</string><string name="msg_internet_issue">We don\'t look to have active internet connection!</string><string name="label_cancel">Cancel</string><string name="start_qco_call">Pay with Wibmo</string><string name="confirm_iap_cancel">Are you sure you want to cancel?</string><string name="label_pl_wait_goingback">Please wait.. Reloading last page..</string><string name="label_no">No</string><string name="lable_please_wait">please wait</string><string name="msg_servers_issue">Unable to reach our servers!\n\nPlease check connection.</string><string name="label_ok">OK</string></file><file path="D:\Images and Icon\Fiticket\SourceCode\Fiticket\AndroidApp\wibmoSDK\src\main\res\values\styles.xml" qualifiers=""><style name="WibmoFont" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/default_text_color_dark</item>
+        <!-- item name="android:typeface">monospace</item -->
+        <item name="android:typeface">sans</item>
+        <!-- item name="android:typeface">monospace</item -->
+        <item name="android:textSize">25sp</item>
+    </style><style name="WibmoConfirmTitle" parent="WibmoFontHeading">
+        <item name="android:textColor">@color/default_text_color_dark</item>
+        <item name="android:textSize">12sp</item>
+    </style><style name="WibmoFontLabel" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#6c6c6c</item>
+        <!-- item name="android:typeface">monospace</item -->
+        <item name="android:typeface">sans</item>
+        <!-- item name="android:typeface">monospace</item -->
+        <item name="android:textSize">15sp</item>
+    </style><style name="WibmoFontHeading" parent="WibmoFont">
+        <item name="android:textColor">@color/default_text_color_dark</item>
+        <item name="android:textSize">17sp</item>
+    </style><style name="Wibmo.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style><style name="WibmoIAPWait" parent="WibmoFont">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/logo_color_blue</item>
+    </style></file><file path="D:\Images and Icon\Fiticket\SourceCode\Fiticket\AndroidApp\wibmoSDK\src\main\res\values-sw720dp-land\dimens.xml" qualifiers="sw720dp-land-v13"><dimen name="activity_horizontal_margin">128dp</dimen></file></source><source path="D:\Images and Icon\Fiticket\SourceCode\Fiticket\AndroidApp\wibmoSDK\build\generated\res\rs\debug"/><source path="D:\Images and Icon\Fiticket\SourceCode\Fiticket\AndroidApp\wibmoSDK\build\generated\res\resValues\debug"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="D:\Images and Icon\Fiticket\SourceCode\Fiticket\AndroidApp\wibmoSDK\src\debug\res"/></dataSet><mergedItems/></merger>

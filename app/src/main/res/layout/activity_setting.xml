@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/div8"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/Gray" />
+
+        <LinearLayout
+            android:id="@+id/changecity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:weightSum="2">
+
+            <com.fitticket.viewmodel.custom.CustomTextViewBold
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="CHANGE CITY"
+                android:textColor="@color/Black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/div9"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/Gray" />
+
+        <LinearLayout
+            android:id="@+id/llFAQ"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:weightSum="2">
+
+            <com.fitticket.viewmodel.custom.CustomTextViewBold
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="FAQ"
+                android:textColor="@color/Black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/div10"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/Gray" />
+
+
+        <LinearLayout
+            android:id="@+id/llTermsCondition"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:weightSum="2">
+
+            <com.fitticket.viewmodel.custom.CustomTextViewBold
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="TERMS AND CONDITIONS"
+                android:textColor="@color/Black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/div11"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/Gray" />
+
+        <LinearLayout
+            android:id="@+id/llFeedback"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:weightSum="2">
+
+            <com.fitticket.viewmodel.custom.CustomTextViewBold
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="FEEDBACK"
+                android:textColor="@color/Black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/div123"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/Gray" />
+
+
+        <LinearLayout
+            android:id="@+id/llsubscription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:weightSum="2">
+
+            <com.fitticket.viewmodel.custom.CustomTextViewBold
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="VIEW SUBSCRIPTION"
+                android:textColor="@color/Black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/div6"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/Gray" />
+
+        <LinearLayout
+            android:id="@+id/lleditprofile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:weightSum="2">
+
+            <com.fitticket.viewmodel.custom.CustomTextViewBold
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="EDIT PROFILE"
+                android:textColor="@color/Black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/div17"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/Gray" />
+
+        <LinearLayout
+            android:id="@+id/llcontactus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:weightSum="2">
+
+            <com.fitticket.viewmodel.custom.CustomTextViewBold
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="CONTACT US"
+                android:textColor="@color/Black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/div18"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+
+            android:background="@color/Gray" />
+
+        <LinearLayout
+            android:id="@+id/llBuySub"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <com.fitticket.viewmodel.custom.CustomTextViewBold
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/buy_sub"
+                android:textColor="@color/Black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/div27"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/Gray" />
+
+        <LinearLayout
+            android:id="@+id/llLogout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/div6"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:weightSum="1">
+
+            <com.fitticket.viewmodel.custom.CustomTextViewBold
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="LOGOUT"
+                android:textColor="@color/Red"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/div6"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:weightSum="1">
+
+            <com.fitticket.viewmodel.custom.CustomTextViewBold
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="LOGIN"
+                android:textColor="@color/VenomGreen"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/div15"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/Gray" />
+    </LinearLayout>
+
+</RelativeLayout>

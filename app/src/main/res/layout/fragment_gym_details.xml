@@ -1,0 +1,54 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Platinum"
+    tools:context="com.fitticket.viewmodel.fragments.GymDetailsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/about_layout" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/GrayGoose" />
+
+        <include layout="@layout/address_layout" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/GrayGoose" />
+        <!-- <TextView
+             android:id="@+id/addressTxtView"
+             android:layout_gravity="bottom"
+             android:layout_width="match_parent"
+             android:background="@drawable/gradient_top_bottom"
+             android:layout_height="wrap_content"
+             android:textColor="@color/White"
+             android:textSize="14sp"
+             android:paddingLeft="5dp"
+             android:paddingBottom="10dp"
+             style="@style/text_shadow"
+             android:gravity="center"
+             />-->
+        <FrameLayout
+            android:id="@+id/mapLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</ScrollView>

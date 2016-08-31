@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.enstage.wibmo.sdk" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application>
+        <activity
+            android:name="com.enstage.wibmo.sdk.inapp.InAppInitActivity"
+            android:label="@string/title_sdk_inapp"
+            android:excludeFromRecents="true"
+            android:theme="@style/Wibmo.Transparent"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+        </activity>
+
+        <activity
+            android:name="com.enstage.wibmo.sdk.inapp.InAppBrowserActivity"
+            android:label="@string/title_sdk_inapp"
+            android:excludeFromRecents="true"
+            android:theme="@style/Wibmo.Transparent"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+        </activity>
+    </application>
+
+</manifest>

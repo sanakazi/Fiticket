@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAllCaps="true"
+    android:textSize="30sp"
+    android:gravity="center_horizontal"
+    android:textColor="@color/AntiqueWhite"
+    android:background="@color/Black"
+    android:text="@string/refer_title"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:adjustViewBounds="true"
+        android:padding="20dp"
+        android:src="@drawable/ic_fiticket"/>
+    <TextView
+        android:id="@+id/referralCodeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/referralBenefitTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center" />
+    <Button
+        android:id="@+id/referralButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/custom_button"
+        android:padding="10dp"
+        android:text="@string/referButton"
+        android:drawableRight="@drawable/paperplane"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+</LinearLayout>

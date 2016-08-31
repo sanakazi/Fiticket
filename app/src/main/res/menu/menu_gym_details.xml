@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fitticket.viewmodel.activities.GymDetailsActivity">
+    <item android:id="@+id/action_fav" android:title="@string/action_fav"
+        android:orderInCategory="1" app:showAsAction="always"
+        android:icon="@drawable/ic_fav_off"/>
+</menu>

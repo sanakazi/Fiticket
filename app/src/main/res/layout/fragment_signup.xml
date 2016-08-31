@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/Platinum"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/yoga" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.fitticket.viewmodel.custom.CustomTextView
+                android:id="@+id/tvWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#333333"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/welcome"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tvWelcome"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <com.fitticket.viewmodel.custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/createaccount"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+         
+
+                <LinearLayout
+                    style="@style/LoginWidget"
+                    android:background="@drawable/rounded_edittext" >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/msg" />
+
+                    <EditText
+                        android:id="@+id/edtemail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:ems="10"
+                        android:hint="ENTER EMAIL"
+                        android:imeOptions="flagNoExtractUi"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true" >
+
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LoginWidget"
+                    android:background="@drawable/rounded_edittext" >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/pwd" />
+
+                    <EditText
+                        android:id="@+id/edtpwd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:hint="ENTER PASSWORD"
+                        android:imeOptions="flagNoExtractUi"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+              
+        
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <CheckBox
+                        android:id="@+id/cbTermsService"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/terms_conditions_text"
+                        android:button="@drawable/checkbox"
+                        android:paddingLeft="3sp"
+                        android:textColor="@color/White" />
+
+                    <TextView
+                        android:id="@+id/tvTermsService"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:linksClickable="true"
+                        android:text="Terms and Service"
+                        android:textColor="@color/White" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btngetstart"
+                    style="@style/LoginWidget"
+                    android:background="@drawable/rounded_button_fiticket"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Get Started"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+      
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/ibCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvWelcome"
+                android:layout_alignParentRight="true"
+                android:background="@color/Transparent"
+                android:padding="10dp"
+                android:src="@drawable/cancel" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
